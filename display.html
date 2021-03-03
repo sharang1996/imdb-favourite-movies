@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - C1 Bonus: Quick Intro to Flexbox</title>
+  <link rel="stylesheet" href="./display.css">
+
+</head>
+<body>
+
+  <figure class="movie">
+    <div class="movie__hero">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg" alt="Poster" class="movie__img">
+    </div>
+    <div class="movie__content">
+      <div class="movie__title">
+        <h1 class="movie__heading">Avengers Endgame</h1>
+        <div class="movie__genre movie__genre--1">#Action</div>
+        <div class="movie__genre delete">
+          <a href="/delete" id='tt3896198'>x</a>
+        </div>
+      </div>
+      <p class="movie__description">The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father the ambitious celestial being Ego.</p>
+      <div class="movie__details">
+        <p class="movie__detail"><span class="emoji">📅</span>26th April 2018</p>
+        <p class="movie__detail"><span class="emoji">⏱</span>130 min</p>
+        <p class="movie__detail"><span class="emoji">⭐️</span>4.7 / 5</p>
+      </div>
+    </div>
+  </figure>
+
+  <figure class="movie">
+    <div class="movie__hero">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg" alt="Poster" class="movie__img">
+    </div>
+    <div class="movie__content">
+      <div class="movie__title">
+        <h1 class="movie__heading">Avengers Endgame</h1>
+        <div class="movie__genre movie__genre--1">#Action</div>
+        <div class="movie__genre delete">
+          <a href="#/delete" id='tt3896198'>x</a>
+        </div>
+      </div>
+      <p class="movie__description">The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father the ambitious celestial being Ego.</p>
+      <div class="movie__details">
+        <p class="movie__detail"><span class="emoji">📅</span>26th April 2018</p>
+        <p class="movie__detail"><span class="emoji">⏱</span>130 min</p>
+        <p class="movie__detail"><span class="emoji">⭐️</span>4.7 / 5</p>
+      </div>
+    </div>
+  </figure>
+
+  <figure class="movie">
+    <div class="movie__hero">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg" alt="Poster" class="movie__img">
+    </div>
+    <div class="movie__content">
+      <div class="movie__title">
+        <h1 class="movie__heading">Avengers Endgame</h1>
+        <div class="movie__genre movie__genre--1">#Action</div>
+        <div class="movie__genre delete">
+          <a href="/delete" id='tt3896198'>x</a>
+        </div>
+      </div>
+      <p class="movie__description">The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father the ambitious celestial being Ego.</p>
+      <div class="movie__details">
+        <p class="movie__detail"><span class="emoji">📅</span>26th April 2018</p>
+        <p class="movie__detail"><span class="emoji">⏱</span>130 min</p>
+        <p class="movie__detail"><span class="emoji">⭐️</span>4.7 / 5</p>
+      </div>
+    </div>
+  </figure>
+
+  <form action="/add" id="add">
+    <label for="imdbID">IMDB Id:</label>
+    <input type="text" id="imdbID" name="imdbID">
+    <input type="submit" value="Add Movie" />
+  </form>
+
+  
+</body>
+</html>
