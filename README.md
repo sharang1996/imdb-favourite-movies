@@ -1,6 +1,5 @@
-# Lumina Learning Ltd - Graduate Software Developer Assignment
-We kindly ask you to solve the task below. By solving and submitting this assignment you provide us with insights in how you solve real-world problems. What we will be looking at are topics such as: choice of technology, structuring of code, selection of 3rd party libraries, documentation etc.
-
+# IMDB favourite movies
+.
 
 ## The task
 - Build a service with PHP or JavaScript (NodeJs as webserver) as the server side language
@@ -14,25 +13,21 @@ Please use the data set provided in the SQL dump in this repo as a base.
 You can change original asset that you think will make the solution better.
 You are allowed to use any library or framework to help you with the task.
 
-## Bonus task
-You are not required to complete all of the bonus tasks, but great if you do! We may want to discuss your approach to the bonus tasks during interview so please think of your approach to these challenges even if you do not complete them.
 
-- Use client side framework such as AngularJS, Angular, ReactJS, Vue, etc.
-- Add simple authentication for any user (or all users) and only authenticated user could view or edit their favourite movies. You could adjust the database structure if needed.
-- Add unit tests
-- Any other improvement or modification (please add it into the readme and explain your reasoning of the improvement or modification)
+## Steps
 
-## Expectations
-Make a copy of this repo. Solve the task. Push your code to a public repo, and send us the link as a reply to our email.
+Step 1 : Importing the users data provided using mysql -u username -p database_name < /path/to/file.sql
 
-Your solution should include a short readme describing your assumptions regarding the task, technology choice, your solution, how to use/test it and any final considerations such as known errors, limitation, something you struggle with, next steps, security concerns etc. 
-
-Don't worry we are not expecting this thing to be perfect.
-
-## Note
-To get an API key in [OMDb API](https://www.omdbapi.com), you will need to register with your name and email address. If you do not constent to give such details to OMDb API, please let us know and we will happily give you an API key for this assignment.
-
-
-###################
-Step 1 : altering the table to support basic auth
+Step 2 : altering the table to support basic auth
 ALTER TABLE users ADD password varchar(64) DEFAULT "123456";
+
+Step 3: edit the .env file in the project to hold the credentials for the database and the api key
+
+step 4: run the command "npm install" to install the dependencies
+
+step 5: start the server using "npm run dev" script
+
+step 6: login with credentials to use the website!
+
+Note: the default database name is test, if importing to another database edit the .env file in the project to reflect the same
+
