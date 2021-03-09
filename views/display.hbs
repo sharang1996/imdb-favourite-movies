@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/display.css">
+    <title>movies</title>
+    <style>
+      button {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+        background: #15c39a;
+        color: #fff;
+        border: none;
+        border-radius: 100px;
+        cursor: pointer;
+        font-family: "Open Sans", sans-serif;
+        margin-top: 15px;
+        transition: background 0.2s ease-out;
+      }
+    </style>
+</head>
+<body>
+
+  <div class="">
+  <div class=>
+    <form action="/logout">
+      <button style="width: 150px; height:50px; font-size: 30px; background-color:rgb(206, 224, 206)" type="submit">Logout</button>
+    </form>
+  </div>
+</div>
+
+    {{#each movies}}
+        <figure class="movie">
+        <div class="movie__hero">
+          <img src={{Poster}} alt="Poster" class="movie__img">
+        </div>
+        <div class="movie__content">
+          <div class="movie__title">
+            <h1 class="movie__heading">{{Title}}</h1>
+            <div class="movie__genre movie__genre--1">{{Genre}}</div>
+            <div class="movie__genre delete">
+              <a href="/delete/{{imdbId}}" id={{imdbId}}>x</a>
+            </div>
+          </div>
+          <p class="movie__description">{{Plot}}</p>
+          <div class="movie__details">
+            <p class="movie__detail"><span class="emoji">📅</span>{{Released}}</p>
+            <p class="movie__detail"><span class="emoji">⏱</span>{{Runtime}}</p>
+            <p class="movie__detail"><span class="emoji">⭐️</span>{{Rating}} / 10</p>
+          </div>
+        </div>
+      </figure>
+    {{/each}}
+
+    <form action="/add" id="add">
+                <label for="imdbID">IMDB ID:</label> 
+                <input type="text" id="imdbID" name="imdbID">
+                <input type="submit" value="Add Movie" />
+    </form>
+</body>
+</html>
