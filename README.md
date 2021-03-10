@@ -16,9 +16,9 @@ You are allowed to use any library or framework to help you with the task.
 
 ## Steps
 
-Step 1 : Importing the users data provided using mysql -u username -p database_name < /path/to/file.sql
+Step 1 : Import the users data provided using mysql -u username -p database_name < /path/to/file.sql
 
-Step 2 : altering the table to support basic auth
+Step 2 : alter the table to support basic auth
 ALTER TABLE users ADD password varchar(64) DEFAULT "123456";
 
 Step 3: edit the .env file in the project to hold the credentials for the database and the api key
