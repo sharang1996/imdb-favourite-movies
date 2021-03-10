@@ -1,5 +1,5 @@
 # IMDB favourite movies
-.
+
 
 ## The task
 - Build a service with PHP or JavaScript (NodeJs as webserver) as the server side language
@@ -18,16 +18,16 @@ You are allowed to use any library or framework to help you with the task.
 
 Step 1 : Import the users data provided using mysql -u username -p database_name < /path/to/file.sql
 
-Step 2 : alter the table to support basic auth
+Step 2 : Alter the table to support basic auth
 ALTER TABLE users ADD password varchar(64) DEFAULT "123456";
 
-Step 3: edit the .env file in the project to hold the credentials for the database and the api key
+Step 3: Edit the .env file in the project to hold the credentials for the database and the api key
 
-step 4: run the command "npm install" to install the dependencies
+step 4: Run the command "npm install" to install the dependencies
 
-step 5: start the server using "npm run dev" script
+step 5: Start the server using "npm run dev" script
 
-step 6: login with credentials to use the website!
+step 6: Login with credentials to use the website!
 
 Note: the default database name is test, if importing to another database edit the .env file in the project to reflect the same
 
